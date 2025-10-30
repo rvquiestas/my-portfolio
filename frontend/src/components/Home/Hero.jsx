@@ -13,12 +13,12 @@ const Hero = () => {
             <span className="mt-16 mb-6 flex items-center space-x-2 border border-[#187DDB] text-[#187DDB] text-xs rounded-full px-4 pr-1.5 py-1.5"><Circle size={16} fill='#187DDB' className='mr-2'/>AVAILABLE FOR WORK</span>
             
 
-          <h1 className="text-gray-900 font-semibold text-3xl sm:text-4xl md:text-5xl max-w-xl">
+          <h1 className="text-primary font-bold text-3xl sm:text-4xl md:text-5xl max-w-xl">
             Hi, I'm RV Quiestas, an aspiring {" "}
             <span className="text-[#187DDB] underline underline-offset-12">web developer.</span>
           </h1>
 
-          <p className="mt-8 text-gray-600 max-w-md text-sm sm:text-base leading-relaxed">
+          <p className="mt-8 text-primary font-light max-w-md text-l leading-relaxed">
             Web developer in the making, always learning and creating.
           </p>
         </div>

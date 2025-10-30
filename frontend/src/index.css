@@ -6,3 +6,27 @@
 *{
   font-family: "Outfit", sans-serif;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-bg: #f5f5f5;
+  --color-primary: #000000;
+  --color-secondary: #187ddb;
+  --color-btn: #ffffff;
+  --color-location: #3d3d3d;
+  --color-project-bg: #ffffff;
+  --color-form-bg: #51a9fb;
+  --color-red: #ff4b4b;
+}
+
+.dark {
+  --color-bg: #000000;
+  --color-primary: #ffffff;
+  --color-secondary: #187ddb;
+  --color-btn: #ffffff;
+  --color-location: #c3c3c3;
+  --color-project-bg: #242424;
+  --color-form-bg: #51a9fb;
+  --color-red: #ff4b4b;
+}
