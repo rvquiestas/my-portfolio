@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { LuMenu } from "react-icons/lu";
+import { IoMdClose } from "react-icons/io";
 import Container from './Container';
 
 const Navbar = () => {
@@ -36,7 +37,7 @@ const Navbar = () => {
             className="md:hidden text-primary"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+            {menuOpen ? <IoMdClose size={28} /> : <LuMenu size={28} />}
           </button>
         </div>
       </Container>
