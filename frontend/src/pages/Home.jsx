@@ -14,13 +14,14 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <PageTransition key="home-content">
+    <PageTransition key="home-content">
+      <div className="min-h-screen flex flex-col">
         <Navbar />
         <Hero />
+        <Hero />
         <Footer />
-      </PageTransition>
-    </div>
+      </div>
+    </PageTransition>
   );
 };
 
