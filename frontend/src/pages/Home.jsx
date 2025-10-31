@@ -18,7 +18,6 @@ const Home = () => {
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <Hero />
-        <Hero />
         <Footer />
       </div>
     </PageTransition>
