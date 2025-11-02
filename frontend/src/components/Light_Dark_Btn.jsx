@@ -14,7 +14,7 @@ const Light_Dark_Btn = () => {
       >
         {/* Toggle circle */}
         <div
-          className={`absolute top-1 left-1 w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center transition-transform duration-300 ${
+          className={`absolute top-1 left-1 w-6 h-6 rounded-full bg-secondary flex items-center justify-center transition-transform duration-300 ${
             theme === "dark" ? "translate-x-8" : "translate-x-0"
           }`}
         >
