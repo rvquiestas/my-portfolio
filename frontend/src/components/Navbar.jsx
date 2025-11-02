@@ -9,7 +9,7 @@ const Navbar = ({ currentPage = "Home" }) => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/" },
+    { name: "About", path: "/about" },
     { name: "Resume", path: "/" },
     { name: "Projects", path: "/" },
     { name: "Contact", path: "/" },
