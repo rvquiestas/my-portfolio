@@ -1,11 +1,15 @@
 import Container from '../Container';
 import { FaCircle } from "react-icons/fa";
 import { GrGithub, GrLinkedin } from "react-icons/gr";
+import { ThemeProvider } from '../../Context/ThemeContext';
+import lightBg from '../../assets/img/rv-light-md.png';
+import darkBg from '../../assets/img/rv-dark-md.png';
 
 const Hero = () => {
+  const { theme } = ThemeProvider.useTheme();
+  
   return (
     <section id="section" className="h-full">
-      {/* Main Content */}
       <Container>
         <main className="flex flex-col md:flex-row items-center max-md:text-center justify-between sm:mt-0 md:mt-12 pb-16">
           <div className="flex flex-col items-center md:items-start">
@@ -24,16 +28,14 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Right Side Image */}
           <div aria-label="Photos of leaders" className="mt-12 pb-6">
             <img
               alt=""
               className="w-100 h-100 rounded-xl hover:scale-105 transition duration-300 object-cover shrink-0 shadow-lg"
-              src="/src/assets/img/rv-light-md.png"
+              src={theme === "dark" ? darkBg : lightBg}
             />
-
-            {/* Buttons */}
-            <div className='flex flex-col sm:flex-row justify-center md:justify-around gap-3 sm:gap-4 mt-4 w-full px-4 sm:px-0'>             
+            
+            <div className='flex flex-col sm:flex-row justify-center md:justify-around gap-3 sm:gap-4 mt-4 w-full px-4 sm:px-0 text-primary'>             
               <a href="https://www.linkedin.com/in/rvq26/" target="_blank" rel="noopener noreferrer" className='w-full sm:w-auto'>
                 <button className='w-full sm:w-auto flex items-center justify-center gap-2 border rounded-md px-6 sm:px-6 md:px-8 py-2.5 sm:py-2.5 cursor-pointer hover:scale-105 transition duration-300'>
                   <GrLinkedin size={20} className="sm:w-6 sm:h-6"/>
@@ -48,7 +50,6 @@ const Hero = () => {
                 </button>              
               </a>           
             </div>
-
           </div>
         </main>
       </Container>

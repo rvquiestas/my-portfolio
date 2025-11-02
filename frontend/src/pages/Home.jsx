@@ -3,6 +3,7 @@ import Hero from "../components/Home/Hero";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PageTransition from "../components/PageTransition";
+import { ThemeProvider } from "../Context/ThemeContext";
 
 const Home = () => {
   useEffect(() => {
@@ -14,12 +15,15 @@ const Home = () => {
   }, []);
 
   return (
+    
     <PageTransition key="home-content">
-      <div className="min-h-screen flex flex-col">
-        <Navbar />
-        <Hero />
-        <Footer />
-      </div>
+      <ThemeProvider>
+        <div className="min-h-screen flex flex-col">
+          <Navbar />
+          <Hero />
+          <Footer />
+        </div>
+      </ThemeProvider>
     </PageTransition>
   );
 };
