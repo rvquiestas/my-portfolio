@@ -44,7 +44,7 @@ const Resume = () => {
                   <div className='flex gap-2'>
                     <button
                     onClick={handleViewResume}
-                    className="flex items-center justify-center gap-3 mx-auto bg-btn text-black border border-primary font-semibold px-8 py-3 rounded-lg transition duration-300 hover:scale-105 shadow-lg"
+                    className="flex items-center justify-center gap-3 mx-auto bg-white text-black border border-primary font-semibold px-8 py-3 rounded-lg transition duration-300 hover:scale-105 shadow-lg"
                   >
                     <span>View Resume</span>
                     <FaExternalLinkAlt size={16} />
@@ -52,7 +52,7 @@ const Resume = () => {
                   
                   <button
                     onClick={onButtonClick}
-                    className="flex items-center justify-center gap-3 mx-auto bg-btn text-black border border-primary font-semibold px-8 py-3 rounded-lg transition duration-300 hover:scale-105 shadow-lg"
+                    className="flex items-center justify-center gap-3 mx-auto bg-white text-black border border-primary font-semibold px-8 py-3 rounded-lg transition duration-300 hover:scale-105 shadow-lg"
                   >
                     <span>Download Resume</span>
                     <FaDownload size={16} />
