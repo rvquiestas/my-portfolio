@@ -35,16 +35,16 @@ const Hero = () => {
               src={theme === "dark" ? darkBg : lightBg}
             />
             
-            <div className='flex flex-col sm:flex-row justify-center md:justify-around gap-3 sm:gap-4 mt-4 w-full px-4 sm:px-0 text-primary'>             
+            <div className='flex flex-col sm:flex-row justify-center md:justify-around gap-3 sm:gap-4 mt-4 w-full px-4 sm:px-0'>             
               <a href="https://www.linkedin.com/in/rvq26/" target="_blank" rel="noopener noreferrer" className='w-full sm:w-auto'>
-                <button className='w-full sm:w-auto flex items-center justify-center gap-2 border rounded-md px-6 sm:px-6 md:px-8 py-2.5 sm:py-2.5 cursor-pointer hover:scale-105 transition duration-300'>
+                <button className='w-full sm:w-auto flex items-center justify-center gap-2 border rounded-md px-6 sm:px-6 md:px-8 py-2.5 sm:py-2.5 cursor-pointer hover:scale-105 transition duration-300 bg-white text-black'>
                   <GrLinkedin size={20} className="sm:w-6 sm:h-6"/>
                   <span className="text-base sm:text-base">LinkedIn</span>
                 </button>
               </a>
 
               <a href="https://github.com/rvquiestas" target="_blank" rel="noopener noreferrer" className='w-full sm:w-auto'>
-                <button className='w-full sm:w-auto flex items-center justify-center gap-2 border rounded-md px-6 sm:px-6 md:px-8 py-2.5 sm:py-2.5 cursor-pointer hover:scale-105 transition duration-300'>
+                <button className='w-full sm:w-auto flex items-center justify-center gap-2 border rounded-md px-6 sm:px-6 md:px-8 py-2.5 sm:py-2.5 cursor-pointer hover:scale-105 transition duration-300 bg-white text-black'>
                   <GrGithub size={20} className="sm:w-6 sm:h-6"/>
                   <span className="text-base sm:text-base">GitHub</span>
                 </button>              
