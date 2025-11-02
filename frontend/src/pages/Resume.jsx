@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import Container from '../components/Container'
 import Title from '../components/Title'
 import { FaExternalLinkAlt, FaDownload } from "react-icons/fa"
+import Experience from '../components/Experience'
 
 const Resume = () => {
   useEffect(() => {
@@ -38,7 +39,9 @@ const Resume = () => {
           
           <section className="grow">
             <Container>
-              <main className="flex flex-row items-start justify-between sm:mt-8 md:mt-12 pb-16 min-h-[30vh]">
+              <main>
+                <div className="flex flex-row items-start justify-between sm:mt-8 md:mt-12 min-h-[10vh]">
+
                 <Title text1={"Resume"} text2={""} />
                   
                   <div className='flex gap-2'>
@@ -58,6 +61,14 @@ const Resume = () => {
                     <FaDownload size={16} />
                   </button>
                   </div>
+                </div>
+
+                  {/* Experience Section */}
+                  <Experience expTitle={"Work Experience"} jobTitle={"IT Intern"} jobCompanyAndLoc={"PCM Cosmetic Products Trading | Dasmariñas, Cavite"} task1={"Developed a task planner website, improving task management efficiency for office staff."} task2={"Gained hands-on experience in maintaining and troubleshooting office equipment, including cleaning and resolving issues with printers and CCTV systems."} date={"Feb 2025 - May 2025"}/>
+
+                  <Experience expTitle={"Leadership Experience"} jobTitle={"Capstone Project Leader"} jobCompanyAndLoc={"STI College Calamba | Calamba, Laguna"} task1={"Led a team of 4 in designing and developing a fully functional MERN Stack e-commerce platform."} task2={"Implemented product management, secure user authentication, and mobile-responsive design, resulting in a seamless shopping experience."} date={"2023 - 2024"}/>
+
+                  <Experience expTitle={"Education"} jobTitle={"Bachelor of Science in Information Technology"} jobCompanyAndLoc={"STI College Calamba | Calamba, Laguna"} task1={"Cum Laude | GWA: 1.5"} task2={"Courses: Web Development, Mobile Application Development, Game Development, Object-Oriented Programming, Data Structures & Algorith, Advance Database Systems, Cybersecurity"} date={"2021 - 2025"}/>
 
               </main>
             </Container>
