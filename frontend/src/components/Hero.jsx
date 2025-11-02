@@ -1,9 +1,9 @@
-import Container from '../Container';
+import Container from './Container';
 import { FaCircle } from "react-icons/fa";
 import { GrGithub, GrLinkedin } from "react-icons/gr";
-import { ThemeProvider } from '../../Context/ThemeContext';
-import lightBg from '../../assets/img/rv-light-md.png';
-import darkBg from '../../assets/img/rv-dark-md.png';
+import { ThemeProvider } from '../Context/ThemeContext';
+import lightBg from '../assets/img/rv-light-md.png';
+import darkBg from '../assets/img/rv-dark-md.png';
 
 const Hero = () => {
   const { theme } = ThemeProvider.useTheme();
