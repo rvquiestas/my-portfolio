@@ -43,7 +43,7 @@ const Resume = () => {
               <main>
                 {/* Header Section with Title and Buttons */}
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-6 mb-8 sm:mb-4 sm:mt-8 md:mt-12 min-h-[10vh]">
-                  <Title text1={"Resume"} text2={""} />
+                  <Title text1={"Resume"} />
                   
                   {/* Buttons Container */}
                   <div className='flex flex-col sm:flex-row gap-2 sm:gap-3 w-full sm:w-auto'>

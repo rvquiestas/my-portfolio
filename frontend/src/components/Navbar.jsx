@@ -11,7 +11,7 @@ const Navbar = ({ currentPage = "Home" }) => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Resume", path: "/resume" },
-    { name: "Projects", path: "/" },
+    { name: "Projects", path: "/projects" },
     { name: "Contact", path: "/" },
   ];
 

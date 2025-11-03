@@ -38,7 +38,7 @@ const About = () => {
 
                   {/* Right Side - Content */}
                   <div className='flex-1 space-y-6'>
-                    <Title text1={"About"} text2={"Me"} />
+                    <Title text1={"About Me"} />
                     
                     <div className='space-y-4'>
                       <h2 className='text-secondary font-semibold text-xl lg:text-2xl'>
