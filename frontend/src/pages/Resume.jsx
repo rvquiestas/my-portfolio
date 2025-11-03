@@ -7,6 +7,7 @@ import Container from '../components/Container'
 import Title from '../components/Title'
 import { FaExternalLinkAlt, FaDownload } from "react-icons/fa"
 import Experience from '../components/Experience'
+import ToolsAndFrameworks from '../components/ToolsAndFrameworks'
 
 const Resume = () => {
   useEffect(() => {
@@ -70,6 +71,8 @@ const Resume = () => {
 
                   <Experience expTitle={"Education"} jobTitle={"Bachelor of Science in Information Technology"} jobCompanyAndLoc={"STI College Calamba | Calamba, Laguna"} task1={"Cum Laude | GWA: 1.5"} task2={"Courses: Web Development, Mobile Application Development, Game Development, Object-Oriented Programming, Data Structures & Algorith, Advance Database Systems, Cybersecurity"} date={"2021 - 2025"}/>
 
+                  {/* Tools and Frameworks */}
+                  <ToolsAndFrameworks/>
               </main>
             </Container>
           </section>

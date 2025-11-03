@@ -5,7 +5,7 @@ const Experience = ({expTitle, jobTitle, jobCompanyAndLoc, task1, task2, date}) 
     <>
     <div className='mb-8'>
         {/* Experience Title */}
-        <div className='inline-flex gap-2 items-center mb-3 uppercase'>
+        <div className='inline-flex gap-2 items-center mb-3'>
         <p className='text-primary text-2xl 2xl:text-3xl font-bold'>{expTitle}</p>
         </div>
 
