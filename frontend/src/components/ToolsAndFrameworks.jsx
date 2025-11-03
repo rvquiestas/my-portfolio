@@ -50,9 +50,18 @@ const ToolsAndFrameworks = () => {
             <div className="flex flex-wrap gap-2 sm:gap-3">
               <TechStack stack={"Git"} />                     
               <TechStack stack={"Vercel"} />                     
-              <TechStack stack={"Visual Studio Code"} />                     
-              <TechStack stack={"Figma"} />                     
+              <TechStack stack={"Visual Studio Code"} />                 
               <TechStack stack={"Discord"} />                     
+            </div>
+          </div>
+
+          {/* Design & 3D Tools */}
+          <div>
+            <p className='text-primary font-semibold text-base sm:text-lg 2xl:text-xl mb-2'>Design & 3D Tools</p>
+            <div className="flex flex-wrap gap-2 sm:gap-3">                 
+              <TechStack stack={"Figma"} />                    
+              <TechStack stack={"Spline (Basic 3D)"} />                    
+              <TechStack stack={"Adobe Photoshop (Basic Editing)"} />                    
             </div>
           </div>
 
