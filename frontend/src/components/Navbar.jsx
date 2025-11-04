@@ -12,7 +12,7 @@ const Navbar = ({ currentPage = "Home" }) => {
     { name: "About", path: "/about" },
     { name: "Resume", path: "/resume" },
     { name: "Projects", path: "/projects" },
-    { name: "Contact", path: "/" },
+    { name: "Contact", path: "/contactMe" },
   ];
 
   const isActive = (linkName) => currentPage === linkName;

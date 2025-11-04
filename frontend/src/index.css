@@ -16,7 +16,7 @@
   --color-location: #3d3d3d;
   --color-project-bg: #ffffff;
   --color-form-bg: #51a9fb;
-  --color-red: #ff4b4b;
+  --color-form-btn-text: #ffffff;
 }
 
 .dark {
@@ -26,5 +26,5 @@
   --color-location: #c3c3c3;
   --color-project-bg: #242424;
   --color-form-bg: #51a9fb;
-  --color-red: #ff4b4b;
+  --color-form-btn-text: #000000;
 }

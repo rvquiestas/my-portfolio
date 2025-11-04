@@ -52,7 +52,7 @@ const Resume = () => {
                       className="flex items-center justify-center gap-2 sm:gap-3 bg-white text-black border border-primary font-semibold px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 rounded-lg transition duration-300 hover:scale-105 shadow-lg text-sm sm:text-base whitespace-nowrap"
                     >
                       <span>View Resume</span>
-                      <FaExternalLinkAlt size={14} className="sm:w-4 sm:h-4" />
+                      <FaExternalLinkAlt className="sm:w-4 sm:h-4" />
                     </button>
                     
                     <button
@@ -60,7 +60,7 @@ const Resume = () => {
                       className="flex items-center justify-center gap-2 sm:gap-3 bg-white text-black border border-primary font-semibold px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 rounded-lg transition duration-300 hover:scale-105 shadow-lg text-sm sm:text-base whitespace-nowrap"
                     >
                       <span>Download Resume</span>
-                      <FaDownload size={14} className="sm:w-4 sm:h-4" />
+                      <FaDownload className="sm:w-4 sm:h-4" />
                     </button>
                   </div>
                 </div>
