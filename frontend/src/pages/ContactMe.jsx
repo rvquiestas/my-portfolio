@@ -30,12 +30,12 @@ const ContactMe = () => {
         'service_gt46wom',
         'template_hcloyhe',
         form.current,
-        'JGqXqbO2uEhHjSiNi' // ✅ public key directly
+        'JGqXqbO2uEhHjSiNi'
       );
 
       console.log('SUCCESS!', result.status, result.text);
-      form.current.reset();          // ✅ clear form
-      setShowSuccess(true);          // ✅ show success modal
+      form.current.reset();          // clear form
+      setShowSuccess(true);          // show success modal
 
     } catch (error) {
       console.error('FAILED...', error);
