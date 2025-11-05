@@ -10,9 +10,13 @@ import { GrGithub, GrLinkedin } from "react-icons/gr";
 import emailjs from '@emailjs/browser';
 import PrivacyPolicy from '../components/PrivacyPolicy';
 
+import ReCAPTCHA from "react-google-recaptcha";
+
 const ContactMe = () => {
   const [showPolicy, setShowPolicy] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
+  const [captchaValue, setCaptchaValue] = useState(null);
+  const captchaRef = useRef();
   const form = useRef();
 
   useEffect(() => {
@@ -27,14 +31,16 @@ const ContactMe = () => {
 
     try {
       const result = await emailjs.sendForm(
-        'service_gt46wom',
-        'template_hcloyhe',
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         form.current,
-        'JGqXqbO2uEhHjSiNi'
+        import.meta.env.VITE_PUBLIC_KEY
       );
 
       console.log('SUCCESS!', result.status, result.text);
       form.current.reset();          // clear form
+      captchaRef.current.reset();   // reset reCAPTCHA
+      setCaptchaValue(null);        // clear captcha value
       setShowSuccess(true);          // show success modal
 
     } catch (error) {
@@ -205,10 +211,19 @@ const ContactMe = () => {
                     </p>
                   </div>
 
+                  {/* reCAPTCHA */}
+                  <ReCAPTCHA
+                    sitekey={import.meta.env.VITE_CAPTCHA_KEY}
+                    className="mt-5"
+                    onChange={(val) => setCaptchaValue(val)}
+                    ref={captchaRef}
+                  />
+
                   {/* Submit */}
                   <button
                     type="submit"
-                    className="mt-6 bg-primary text-form-btn-text font-semibold h-12 px-8 rounded-md hover:bg-secondary hover:scale-105 transition-transform duration-300 w-full"
+                    className="mt-6 bg-primary text-form-btn-text font-semibold h-12 px-8 rounded-md transition-transform duration-300 w-full hover:bg-secondary hover:scale-105 disabled:bg-gray-400 disabled:text-gray-200 disabled:cursor-not-allowed disabled:hover:bg-gray-400 disabled:hover:scale-100"
+                    disabled={!captchaValue}
                   >
                     Send Message
                   </button>
