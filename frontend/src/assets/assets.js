@@ -1,5 +1,7 @@
 import lightProj1 from "./proj1-light.png";
 import darkProj1 from "./proj1-dark.png";
+import lightProj1a from "./proj1a-light.png";
+import darkProj1a from "./proj1a-dark.png";
 import lightProj2 from "./proj2-light.png";
 import darkProj2 from "./proj2-dark.png";
 import lightProj3 from "./proj3-light.png";
@@ -12,6 +14,8 @@ import rv_chibiImg from "./rv-sti-chibi.png";
 export const assets = {
     lightProj1,
     darkProj1,
+    lightProj1a,
+    darkProj1a,
     lightProj2,
     darkProj2,
     lightProj3,
