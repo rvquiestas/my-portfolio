@@ -3,11 +3,10 @@ import PageTransition from '../components/PageTransition'
 import { ThemeProvider } from '../Context/ThemeContext'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-
 import Container from '../components/Container';
-import chibiImg from '../assets/img/rv-sti-chibi.png';
 import Title from '../components/Title';
 import { FaChevronRight } from "react-icons/fa";
+import { assets } from "../assets/assets.js";
 
 const About = () => {
   useEffect(() => {
@@ -32,7 +31,7 @@ const About = () => {
                     <img
                       alt="Profile chibi character"
                       className="w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[340px] h-auto object-contain"
-                      src={chibiImg}
+                      src={assets.rv_chibiImg}
                     />
                   </div>
 

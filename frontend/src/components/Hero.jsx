@@ -2,8 +2,7 @@ import Container from './Container';
 import { FaCircle } from "react-icons/fa";
 import { GrGithub, GrLinkedin } from "react-icons/gr";
 import { ThemeProvider } from '../Context/ThemeContext';
-import lightBg from '../assets/img/rv-light-md.png';
-import darkBg from '../assets/img/rv-dark-md.png';
+import { assets } from "../assets/assets.js";
 
 const Hero = () => {
   const { theme } = ThemeProvider.useTheme();
@@ -32,7 +31,7 @@ const Hero = () => {
             <img
               alt=""
               className="w-100 h-100 rounded-xl hover:scale-105 transition duration-300 object-cover shrink-0 shadow-lg"
-              src={theme === "dark" ? darkBg : lightBg}
+              src={theme === "dark" ? assets.rv_darkBg : assets.rv_lightBg}
             />
             
             <div className='flex flex-col sm:flex-row justify-center md:justify-around gap-3 sm:gap-4 mt-4 w-full px-4 sm:px-0'>             

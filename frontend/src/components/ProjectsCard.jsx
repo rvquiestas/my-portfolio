@@ -1,13 +1,7 @@
 import { ThemeProvider } from '../Context/ThemeContext';
 import { GrGithub } from "react-icons/gr";
 import { IoEye, IoEyeOff } from "react-icons/io5";
-
-import lightProj1 from '../assets/img/proj1-light.png';
-import darkProj1 from '../assets/img/proj1-dark.png';
-import lightProj2 from '../assets/img/proj2-light.png';
-import darkProj2 from '../assets/img/proj2-dark.png';
-import lightProj3 from '../assets/img/proj3-light.png';
-import darkProj3 from '../assets/img/proj3-dark.png';
+import { assets } from "../assets/assets.js";
 
 const ProjectsCard = () => {
     const { theme } = ThemeProvider.useTheme();
@@ -19,7 +13,7 @@ const ProjectsCard = () => {
             <img
             alt=""
             className="shadow-2xl sm:w-100 sm:h-100 md:w-120 md:h-120 rounded-t-lg object-cover shrink-0"
-            src={theme === "dark" ? darkProj1 : lightProj1}
+            src={theme === "dark" ? assets.darkProj1 : assets.lightProj1}
             />
             <div className='flex items-center justify-evenly rounded-b-lg pt-4 pb-8 bg-project-bg text-primary'>
                 <a href="https://github.com/rvquiestas/MGWRPC-WEBSITE" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2"><GrGithub size={20} className="sm:w-6 sm:h-6"/>View on GitHub</a>
@@ -32,7 +26,7 @@ const ProjectsCard = () => {
             <img
             alt=""
             className="shadow-2xl sm:w-100 sm:h-100 md:w-120 md:h-120 rounded-t-lg object-cover shrink-0"
-            src={theme === "dark" ? darkProj2 : lightProj2}
+            src={theme === "dark" ? assets.darkProj2 : assets.lightProj2}
             />
             <div className='flex items-center justify-evenly rounded-b-lg pt-4 pb-8 bg-project-bg text-primary'>
                 <a href="https://github.com/rvquiestas/SKUDL_Website" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2"><GrGithub size={20} className="sm:w-6 sm:h-6"/>View on GitHub</a>
@@ -45,7 +39,7 @@ const ProjectsCard = () => {
             <img
             alt=""
             className="shadow-2xl sm:w-100 sm:h-100 md:w-120 md:h-120 rounded-t-lg object-cover shrink-0"
-            src={theme === "dark" ? darkProj3 : lightProj3}
+            src={theme === "dark" ? assets.darkProj3 : assets.lightProj3}
             />
             <div className='flex items-center justify-evenly rounded-b-lg pt-4 pb-8 bg-project-bg text-primary'>
                 <a href="https://github.com/rvquiestas/my-portfolio" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2"><GrGithub size={20} className="sm:w-6 sm:h-6"/>View on GitHub</a>
