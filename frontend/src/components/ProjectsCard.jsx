@@ -16,8 +16,8 @@ const ProjectsCard = () => {
             src={theme === "dark" ? assets.darkProj1 : assets.lightProj1}
             />
             <div className='flex items-center justify-evenly rounded-b-lg pt-4 pb-8 bg-project-bg text-primary'>
-                <a href="https://github.com/rvquiestas/MGWRPC-WEBSITE" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2"><GrGithub size={20} className="sm:w-6 sm:h-6"/>View on GitHub</a>
-                <a href="https://mgwrpc-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2"><IoEye size={20} className="sm:w-6 sm:h-6"/>Live Preview</a>
+                <a href="https://github.com/rvquiestas/MGWRPC-WEBSITE" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-secondary"><GrGithub size={20} className="sm:w-6 sm:h-6"/>View on GitHub</a>
+                <a href="https://mgwrpc-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-secondary"><IoEye size={20} className="sm:w-6 sm:h-6"/>Live Preview</a>
             </div>
         </div>
 
@@ -29,7 +29,7 @@ const ProjectsCard = () => {
             src={theme === "dark" ? assets.darkProj2 : assets.lightProj2}
             />
             <div className='flex items-center justify-evenly rounded-b-lg pt-4 pb-8 bg-project-bg text-primary'>
-                <a href="https://github.com/rvquiestas/SKUDL_Website" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2"><GrGithub size={20} className="sm:w-6 sm:h-6"/>View on GitHub</a>
+                <a href="https://github.com/rvquiestas/SKUDL_Website" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-secondary"><GrGithub size={20} className="sm:w-6 sm:h-6"/>View on GitHub</a>
                 <a href="" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 pointer-events-none"><IoEyeOff size={20} className="sm:w-6 sm:h-6"/>No Preview</a>
             </div>
         </div>
@@ -42,7 +42,7 @@ const ProjectsCard = () => {
             src={theme === "dark" ? assets.darkProj3 : assets.lightProj3}
             />
             <div className='flex items-center justify-evenly rounded-b-lg pt-4 pb-8 bg-project-bg text-primary'>
-                <a href="https://github.com/rvquiestas/my-portfolio" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2"><GrGithub size={20} className="sm:w-6 sm:h-6"/>View on GitHub</a>
+                <a href="https://github.com/rvquiestas/my-portfolio" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-secondary"><GrGithub size={20} className="sm:w-6 sm:h-6"/>View on GitHub</a>
                 <a href="" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 pointer-events-none"><IoEyeOff size={20} className="sm:w-6 sm:h-6"/>No Preview</a>
             </div>
         </div>
