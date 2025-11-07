@@ -67,10 +67,19 @@ const Resume = () => {
 
                 {/* Experience Section */}
                 <Experience 
+                  expTitle={"Education"} 
+                  jobTitle={"Bachelor of Science in Information Technology"} 
+                  jobCompanyAndLoc={"STI College Calamba | Calamba, Laguna"} 
+                  task1={"Cum Laude | GWA: 1.5"} 
+                  task2={"Courses: Web Development, Mobile Application Development, Game Development, Object-Oriented Programming, Data Structures & Algorithm, Advance Database Systems, Application Development, Operating Systems, Cybersecurity"} 
+                  date={"2021 - 2025"}
+                />
+
+                <Experience 
                   expTitle={"Work Experience"} 
                   jobTitle={"IT Intern"} 
                   jobCompanyAndLoc={"PCM Cosmetic Products Trading | Dasmariñas, Cavite"} 
-                  task1={"Developed a task planner website, improving task management efficiency for office staff."} 
+                  task1={"Helped develop a task planner website to make it easier for the team to manage their daily tasks"} 
                   task2={"Gained hands-on experience in maintaining and troubleshooting office equipment, including cleaning and resolving issues with printers and CCTV systems."} 
                   date={"Feb 2025 - May 2025"}
                 />
@@ -79,18 +88,9 @@ const Resume = () => {
                   expTitle={"Leadership Experience"} 
                   jobTitle={"Capstone Project Leader"} 
                   jobCompanyAndLoc={"STI College Calamba | Calamba, Laguna"} 
-                  task1={"Led a team of 4 in designing and developing a fully functional MERN Stack e-commerce platform."} 
-                  task2={"Implemented product management, secure user authentication, and mobile-responsive design, resulting in a seamless shopping experience."} 
+                  task1={"Led a capstone project team in creating a Computer Parts Website that offered an easy and smooth online shopping experience. Managed the project schedule, assigned tasks, and guided the team to work well together."}
+                  task2={"Also worked as a MongoDB, Express JS, React JS, Node JS (MERN) Stack programmer, building important features like product management, user login, and a mobile-friendly design, leading to a fully working and successful project."}
                   date={"2023 - 2024"}
-                />
-
-                <Experience 
-                  expTitle={"Education"} 
-                  jobTitle={"Bachelor of Science in Information Technology"} 
-                  jobCompanyAndLoc={"STI College Calamba | Calamba, Laguna"} 
-                  task1={"Cum Laude | GWA: 1.5"} 
-                  task2={"Courses: Web Development, Mobile Application Development, Game Development, Object-Oriented Programming, Data Structures & Algorithm, Advance Database Systems, Cybersecurity"} 
-                  date={"2021 - 2025"}
                 />
 
                 {/* Tools and Frameworks */}
