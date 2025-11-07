@@ -1,11 +1,14 @@
 import { ThemeProvider } from '../Context/ThemeContext';
 import { GrGithub } from "react-icons/gr";
 import { IoEye, IoEyeOff } from "react-icons/io5";
+import { IoMdInformationCircleOutline } from "react-icons/io";
 import { FiFigma } from "react-icons/fi";
 import { assets } from "../assets/assets.js";
+import { useState } from 'react';
 
 const ProjectsCard = () => {
     const { theme } = ThemeProvider.useTheme();
+    const [showTooltip, setShowTooltip] = useState(false); // for 'No Preview' tooltip
 
   return (
     <div className="flex gap-8 flex-wrap justify-evenly mt-12 pb-6 ">
@@ -44,7 +47,27 @@ const ProjectsCard = () => {
             />
             <div className='flex items-center justify-evenly rounded-b-lg pt-4 pb-8 bg-project-bg text-primary'>
                 <a href="https://github.com/rvquiestas/SKUDL_Website" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-secondary"><GrGithub className="sm:w-6 sm:h-6"/>View on GitHub</a>
-                <a href="" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 pointer-events-none"><IoEyeOff className="sm:w-6 sm:h-6"/>No Preview</a>
+                
+                {/* No Preview Button + Info Icon */}
+                <div className="flex items-center gap-2 relative group">
+                <IoEyeOff className="sm:w-6 sm:h-6"/>
+                <span>No Preview</span>
+
+                {/* Info icon works on hover (desktop) and click (mobile) */}
+                <IoMdInformationCircleOutline 
+                    className="sm:w-5 sm:h-5 text-red-500"
+                    onClick={() => setShowTooltip(!showTooltip)}
+                    onMouseEnter={() => setShowTooltip(true)}
+                    onMouseLeave={() => setShowTooltip(false)}
+                />
+
+                {/* Tooltip */}
+                {(showTooltip) && (
+                    <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded transition duration-200 whitespace-nowrap">
+                    Assets in progress – live preview coming soon
+                    </span>
+                )}
+                </div>
             </div>
         </div>
         
