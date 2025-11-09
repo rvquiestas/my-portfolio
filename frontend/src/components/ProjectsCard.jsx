@@ -46,7 +46,7 @@ const ProjectsCard = () => {
             src={theme === "dark" ? assets.darkProj2 : assets.lightProj2}
             />
             <div className='flex items-center justify-evenly rounded-b-lg pt-4 pb-8 bg-project-bg text-primary'>
-                <a href="https://github.com/rvquiestas/SKUDL_Website" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-secondary"><GrGithub className="sm:w-6 sm:h-6"/>View on GitHub</a>
+                {/* <a href="https://github.com/rvquiestas/SKUDL_Website" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-secondary"><GrGithub className="sm:w-6 sm:h-6"/>View on GitHub</a> */}
                 
                 {/* No Preview Button + Info Icon */}
                 <div className="flex items-center gap-2 relative group">
