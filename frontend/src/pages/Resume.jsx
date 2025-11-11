@@ -19,14 +19,14 @@ const Resume = () => {
   }, []);
 
   const handleViewResume = () => {
-    window.open('/RVQuiestas_Resume.pdf', '_blank');
+    window.open('/QUIESTAS_Resume.pdf', '_blank');
   };
 
   const onButtonClick = () => {
-    const pdfUrl = "/RVQuiestas_Resume.pdf";
+    const pdfUrl = "/QUIESTAS_Resume.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "RVQuiestas_Resume.pdf";
+    link.download = "QUIESTAS_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
