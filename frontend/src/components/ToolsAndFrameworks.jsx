@@ -29,6 +29,7 @@ const ToolsAndFrameworks = () => {
             <div className="flex flex-wrap gap-2 sm:gap-3">
               <TechStack stack={"Node.js"} />                          
               <TechStack stack={"Express.js"} />                          
+              <TechStack stack={"Google Apps Script"} />                          
               <TechStack stack={"JWT"} />                          
               <TechStack stack={"Stripe"} />                         
               <TechStack stack={"EmailJS"} />                          

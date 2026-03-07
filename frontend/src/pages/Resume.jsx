@@ -77,6 +77,15 @@ const Resume = () => {
 
                 <Experience 
                   expTitle={"Work Experience"} 
+                  jobTitle={"Junior IT Programmer"} 
+                  jobCompanyAndLoc={"Aurora Media Inc. | BGC, Taguig"} 
+                  task1={"Developed and deployed a Submission Portal using React.js and Tailwind CSS, automating file uploads to Google Drive and real-time logging to Google Sheets via Google Apps Script, eliminating manual submission and data entry processes."} 
+                  task2={"Reduced manual processing time by ~80%, significantly improving team efficiency."} 
+                  task3={"Deployed via Vercel, improving system accessibility and workflow efficiency."} 
+                  date={"Dec 2025 - Jan 2026 (Project-Based)"}
+                />
+                
+                <Experience 
                   jobTitle={"IT Intern"} 
                   jobCompanyAndLoc={"PCM Cosmetic Products Trading | Dasmariñas, Cavite"} 
                   task1={"Helped develop a task planner website to make it easier for the team to manage their daily tasks"} 

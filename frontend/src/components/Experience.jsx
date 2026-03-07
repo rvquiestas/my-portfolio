@@ -1,5 +1,5 @@
 
-const Experience = ({expTitle, jobTitle, jobCompanyAndLoc, task1, task2, date}) => {
+const Experience = ({expTitle, jobTitle, jobCompanyAndLoc, task1, task2, task3, date}) => {
   return (
     <div className='mb-6 sm:mb-8'>
       {/* Experience Title */}
@@ -22,6 +22,7 @@ const Experience = ({expTitle, jobTitle, jobCompanyAndLoc, task1, task2, date}) 
         <ol className='list-disc marker:text-secondary mt-4 ml-5 text-primary text-sm sm:text-base space-y-1'>
           <li className='wrap-break-word'>{task1}</li>
           <li className='wrap-break-word'>{task2}</li>
+          <li className='wrap-break-word'>{task3}</li>
         </ol>    
       </div>
     </div>
